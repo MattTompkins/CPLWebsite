@@ -13,3 +13,7 @@ header {
 h1, h2, h3, h4, h5, h6, .title-font {
     font-family: 'Staatliches', sans-serif;
 }
+
+footer h2 {
+    letter-spacing: 1px;
+}
