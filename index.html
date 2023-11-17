@@ -2,259 +2,317 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CPL Redesign Project</title>
+	<title>CPL Redesign Project</title>
 
-    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="scripts/tailwind.config.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="scripts/tailwind.config.js"></script>
 
-    <!-- Styles and fonts -->
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,301,701,300,501,401,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles/style.css" />
+	<!-- Styles and fonts -->
+	<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,301,701,300,501,401,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body class="bg-gray-100">
 
-    <header class="bg-white px-5">
-        <div class="container max-w-8xl mx-auto flex shadow-b shadow-lg h-full">
+	<header class="bg-white px-5">
+		<div class="container max-w-8xl mx-auto flex shadow-b shadow-lg h-full">
 
-            <div class="bg-navy flex items-center">
-                <a href="/">
-                    <img src="/assets/logo.png" alt="Logo" class="p-3" style="height: 120px;">
-                </a>
-            </div>
+			<div class="bg-navy flex items-center">
+				<a href="/">
+					<img src="/assets/logo.png" alt="Logo" class="p-3" style="height: 120px;">
+				</a>
+			</div>
 
-            <div class="flex flex-col flex-grow">
-                <div class="bg-red-700 border-gray-200">
-                    <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto my-auto">
-                        <a href="#" class="p-3 text-white ml-2 text-lg hover:bg-navy"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#" class="p-3 text-white ml-2 mr-3 text-lg hover:bg-navy"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="https://www.justgiving.com/campaign/cplfloodappeal"
-                            class="p-3 px-8 w-40 text-center bg-yellow-400 hover:bg-navy hover:text-white header__donate-button">DONATE</a>
-                    </div>
-                </div>
+			<div class="flex flex-col flex-grow">
+				<div class="bg-red-700 border-gray-200">
+					<div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto my-auto">
+						<a href="#" class="p-3 text-white ml-2 text-lg hover:bg-navy"><i
+								class="fab fa-instagram"></i></a>
+						<a href="#" class="p-3 text-white ml-2 mr-3 text-lg hover:bg-navy"><i
+								class="fab fa-facebook"></i></a>
+						<a href="https://www.justgiving.com/campaign/cplfloodappeal"
+							class="p-3 px-8 w-40 text-center bg-yellow-400 hover:bg-navy hover:text-white header__donate-button">DONATE</a>
+					</div>
+				</div>
 
-                <nav>
-                    <div class="flex flex-wrap items-center justify-between mx-auto">
-                        <ul class="font-medium w-full flex">
-                            <li class="flex-1 border-r  border-gray-200">
-                                <a href="/about.html"
-                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">About</a>
-                            </li>
-                            <li class="flex-1 border-r border-gray-200">
-                                <a href="/services.html"
-                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Services</a>
-                            </li>
-                            <li class="flex-1 border-r  border-gray-200">
-                                <a href="/training.html"
-                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Training</a>
-                            </li>
-                            <li class="flex-1 border-r  border-gray-200">
-                                <a href="/events.html"
-                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Events</a>
-                            </li>
-                            <li class="flex-1 border-r  border-gray-200">
-                                <a href="/news.html"
-                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">NEWS</a>
-                            </li>
-                            <li class="flex-1  border-gray-200">
-                                <a href="/contact.html"
-                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Contact</a>
-                            </li>
-                        </ul>
+				<nav>
+					<div class="flex flex-wrap items-center justify-between mx-auto">
+						<ul class="font-medium w-full flex">
+							<li class="flex-1 border-r  border-gray-200">
+								<a href="/about.html"
+									class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">About</a>
+							</li>
+							<li class="flex-1 border-r border-gray-200">
+								<a href="/services.html"
+									class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Services</a>
+							</li>
+							<li class="flex-1 border-r  border-gray-200">
+								<a href="/training.html"
+									class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Training</a>
+							</li>
+							<li class="flex-1 border-r  border-gray-200">
+								<a href="/events.html"
+									class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Events</a>
+							</li>
+							<li class="flex-1 border-r  border-gray-200">
+								<a href="/news.html"
+									class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">NEWS</a>
+							</li>
+							<li class="flex-1  border-gray-200">
+								<a href="/contact.html"
+									class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Contact</a>
+							</li>
+						</ul>
 
-                    </div>
-                </nav>
+					</div>
+				</nav>
 
-            </div>
-        </div>
+			</div>
+		</div>
 
-        <!-- TODO: Mobile navigation -->
-    </header>
+		<!-- TODO: Mobile navigation -->
+	</header>
 
-    <!-- Hero section -->
-    <section class="mx-auto flex items-center justify-center h-screen bg-cover bg-no-repeat"
-        style="background-image: url('https://www.thelifeguards.org.uk/img/photos/lake.jpg'); max-height: 750px;">
-        <div class="container">
-            <div class="p-8 text-white md:w-2/3">
-                <div class="hero-title">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"><span>Here is the main campaign title
-                            text</span></h1>
-                </div>
-                <p class="text-lg mb-6"><span class="bg-red-600 px-2 py-1">Here is some space to add some more
-                        text.</span></p>
-                <div class="space-x-4">
-                    <a href="#"
-                        class="p-3 px-8 w-40 text-center text-white text-xl bg-navy hover:bg-red-700 title-font header__donate-button">Volunteer</a>
-                    <a href="https://www.justgiving.com/campaign/cplfloodappeal"
-                        class="p-3 px-8 w-40 text-center text-black text-xl bg-yellow-400 hover:bg-red-700 hover:text-white title-font header__donate-button">Donate</a>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- Hero section -->
+	<section class="mx-auto flex items-center justify-center h-screen bg-cover bg-no-repeat"
+		style="background-image: url('https://www.thelifeguards.org.uk/img/photos/lake.jpg'); max-height: 750px;">
+		<div class="container">
+			<div class="p-8 text-white md:w-2/3">
+				<div class="hero-title">
+					<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"><span>Here is the main campaign title
+							text</span></h1>
+				</div>
+				<p class="text-lg mb-6"><span class="bg-red-600 px-2 py-1">Here is some space to add some more
+						text.</span></p>
+				<div class="space-x-4">
+					<a href="#"
+						class="p-3 px-8 w-40 text-center text-white text-xl bg-navy hover:bg-red-700 title-font header__donate-button">Volunteer</a>
+					<a href="https://www.justgiving.com/campaign/cplfloodappeal"
+						class="p-3 px-8 w-40 text-center text-black text-xl bg-yellow-400 hover:bg-red-700 hover:text-white title-font header__donate-button">Donate</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- Info Section -->
-    <section class="bg-white">
-        <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-            <img class="w-full rounded-2xl" src="https://www.thelifeguards.org.uk/img/photos/piranha.jpg" alt="dashboard image">
-            <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Here is a bit of space to write about who and what we are.</h2>
-                <p class="mb-2 text-gray-700 md:text-lg">Colwick Park Lifeguards are a provider of voluntary Water Safety & Rescue services at open water events and we are proudly affiliated to the Royal Life Saving Society. </p>
-                <p class="mb-6 text-gray-700 md:text-lg">Throughout the year, we provide numerous training and volunteering opportunities at festivals, sports events and other social gatherings.</p>
-                <a href="#" class="inline-flex items-center bg-navy text-white focus:ring-4 focus:ring-primary-300 text-sm px-5 py-3 text-center hover:bg-cplRed cta-button">
-                    Find out more
-                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-            </div>
-        </div>
-    </section>
+	<!-- Info Section -->
+	<section class="bg-white">
+		<div
+			class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+			<img class="w-full rounded-2xl" src="https://www.thelifeguards.org.uk/img/photos/piranha.jpg"
+				alt="dashboard image">
+			<div class="mt-4 md:mt-0">
+				<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Here is a bit of space to write
+					about who and what we are.</h2>
+				<p class="mb-2 text-gray-700 md:text-lg">Colwick Park Lifeguards are a provider of voluntary Water
+					Safety & Rescue services at open water events and we are proudly affiliated to the Royal Life Saving
+					Society. </p>
+				<p class="mb-6 text-gray-700 md:text-lg">Throughout the year, we provide numerous training and
+					volunteering opportunities at festivals, sports events and other social gatherings.</p>
+				<a href="#"
+					class="inline-flex items-center bg-navy text-white focus:ring-4 focus:ring-primary-300 text-sm px-5 py-3 text-center hover:bg-cplRed cta-button">
+					Find out more
+					<svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+							clip-rule="evenodd"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
 
-    <!-- Services section -->
-    <section>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <div class="max-w-screen-md mb-8 lg:mb-9">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">What we do</h2>
-                <p class="text-gray-700 sm:text-xl">Here is some space to write a few lines of text about the different things that we do.</p>
-            </div>
-            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-                <div>
-                    <div class="flex justify-center items-center mb-4 bg-primary-100">
-                       <img src="https://www.thelifeguards.org.uk/img/photos/truck.jpg" class="rounded-lg">
-                    </div>
-                    <h3 class="mb-2 text-2xl font-bold">Event Safety Cover</h3>
-                    <p class="text-gray-600">From lifeguard and safety boat coverage through to risk assessments event planning, we can cater to all of your water safety needs.</p>
-                    <a href="#" class="inline-flex items-center text-gray-600 text-center mt-3 hover:underline">
-                        Find out more
-                        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </a>
-                </div>
-                <div>
-                    <div class="flex justify-center items-center mb-4 rounded-full bg-primary-100">
-                        <img src="https://www.thelifeguards.org.uk/img/photos/equipment.jpg" class="rounded-lg">
-                     </div>
-                    <h3 class="mb-2 text-2xl font-bold">Training</h3>
-                    <p class="text-gray-600">We provide regular training courses and refresher sessions in lifeguarding skills, powerboat handling and more.</p>
-                    <a href="#" class="inline-flex items-center text-gray-600 text-center mt-3 hover:underline">
-                        Find out more
-                        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </a>
-                </div>
-                <div>
-                    <div class="flex justify-center items-center mb-4 rounded-full bg-primary-100">
-                        <img src="https://www.thelifeguards.org.uk/img/photos/RIB.jpg" class="rounded-lg">
-                     </div>
-                    <h3 class="mb-2 text-2xl font-bold">Volunteer with us</h3>
-                    <p class="text-gray-600">Get involved by joining our dedicated and friendly team at one of our several exciting events this year.</p>
-                    <a href="#" class="inline-flex items-center text-gray-600 text-center mt-3 hover:underline">
-                        Find out more
-                        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-      </section>
+	<!-- Services section -->
+	<section>
+		<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+			<div class="max-w-screen-md mb-8 lg:mb-9">
+				<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">What we do</h2>
+				<p class="text-gray-700 sm:text-xl">Here is some space to write a few lines of text about the different
+					things that we do.</p>
+			</div>
+			<div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+				<div>
+					<div class="flex justify-center items-center mb-4 bg-primary-100">
+						<img src="https://www.thelifeguards.org.uk/img/photos/truck.jpg" class="rounded-lg">
+					</div>
+					<h3 class="mb-2 text-2xl font-bold">Event Safety Cover</h3>
+					<p class="text-gray-600">From lifeguard and safety boat coverage through to risk assessments event
+						planning, we can cater to all of your water safety needs.</p>
+					<a href="#" class="inline-flex items-center text-gray-600 text-center mt-3 hover:underline">
+						Find out more
+						<svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+								d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+								clip-rule="evenodd"></path>
+						</svg>
+					</a>
+				</div>
+				<div>
+					<div class="flex justify-center items-center mb-4 rounded-full bg-primary-100">
+						<img src="https://www.thelifeguards.org.uk/img/photos/equipment.jpg" class="rounded-lg">
+					</div>
+					<h3 class="mb-2 text-2xl font-bold">Training</h3>
+					<p class="text-gray-600">We provide regular training courses and refresher sessions in lifeguarding
+						skills, powerboat handling and more.</p>
+					<a href="#" class="inline-flex items-center text-gray-600 text-center mt-3 hover:underline">
+						Find out more
+						<svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+								d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+								clip-rule="evenodd"></path>
+						</svg>
+					</a>
+				</div>
+				<div>
+					<div class="flex justify-center items-center mb-4 rounded-full bg-primary-100">
+						<img src="https://www.thelifeguards.org.uk/img/photos/RIB.jpg" class="rounded-lg">
+					</div>
+					<h3 class="mb-2 text-2xl font-bold">Volunteer with us</h3>
+					<p class="text-gray-600">Get involved by joining our dedicated and friendly team at one of our
+						several exciting events this year.</p>
+					<a href="#" class="inline-flex items-center text-gray-600 text-center mt-3 hover:underline">
+						Find out more
+						<svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+								d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+								clip-rule="evenodd"></path>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- Events & Training section-->
-    <section>
-        Events & Training - filter dropdown
-    </section>
+	<!-- Events & Training section-->
+	<section>
+		Events & Training - filter dropdown
+	</section>
 
-    <!-- News section-->
-    <section>
-        Latest news
-    </section>
+	<!-- News section-->
+	<section>
 
-    Newsletter signup
+	</section>
 
-    Above footer: RLSS logo etc.
-    
-    <section class="bg-white">
-        <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-            <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-4xl">Join our mailing list</h2>
-            <p class="mb-6 text-gray-700 md:text-lg text-center">Keep up to date with the latest news, upcoming events and courses, socials and more.</p>
-            <form class="flex flex-col sm:flex-row sm:justify-center sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <input type="email" class="w-full sm:w-2/3 md:w-1/3 px-4 py-3 border border-gray-300 rounded-lg focus:ring-4 focus:ring-primary-300 focus:border-transparent" placeholder="Enter your email address">
-                <button type="submit" class="w-full sm:w-auto px-8 py-3 text-white bg-navy rounded-lg hover:bg-red-700">Sign up</button>
-        </div>
-    </section>
+	Newsletter signup
 
-    <footer class="bg-gray-900 py-6">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div class="md:flex md:justify-between">
-                <div class="mb-6 md:mb-0 text-white">
-                    <img src="assets/logo.png" style="height: 120px;">
-                </div>
-                <div class="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-4">
-                    <div>
-                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">About</h2>
-                        <ul class="text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="" class="hover:underline">About us</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="" class="hover:underline">News</a>
-                            </li>
-                            <li>
-                                <a href="" class="hover:underline">Volunteer</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">Services</h2>
-                        <ul class="text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="" class="hover:underline">Linssssssssssk</a>
-                            </li>
-                            <li>
-                                <a href="" class="hover:underline">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">Legal</h2>
-                        <ul class="text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="" class="hover:underline">Lindsa adsysk</a>
-                            </li>
-                            <li>
-                                <a href="" class="hover:underline">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm sm:text-center text-gray-400">© 2023 Colwick Park Lifeguards.
-                    All Rights Reserved.
-                </span>
-                <span class="text-sm sm:text-center text-gray-400">Registered Charity number:
-                    1198775</span>
+	Above footer: RLSS logo etc.
 
-                <div class="flex mt-4 sm:justify-center sm:mt-0">
-                    <a href="#" class="text-gray-500 hover:text-white">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-white ms-5">
-                        <i class="fab fa-instagram"></i></a>
-                    </a>
+	<section class="bg-white">
+		<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+			<div class="mx-auto max-w-screen-md sm:text-center">
+				<h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Join our mailing list
+				</h2>
+				<p class="mx-auto mb-6 max-w-2xl font-light text-gray-500 sm:text-xl ">Keep up to date with the latest
+					news, upcoming events and courses, socials and more.</p>
+				<form action="#">
+					<div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+						<div class="relative w-full">
+							<label for="email" class="hidden mb-2 text-sm font-medium text-gray-900">Email
+								address</label>
+							<div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+								<svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+									</path>
+									<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+								</svg>
+							</div>
+							<input
+								class="block p-3 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500"
+								placeholder="Enter your email" type="email" id="email" required="">
+						</div>
+						<div>
+							<button type="submit"
+								class="py-3 px-5 w-full font-medium text-center text-white rounded-lg border cursor-pointer bg-navy border-navy sm:rounded-none sm:rounded-r-lg hover:bg-cplRed hover:border-cplRed focus:ring-4 focus:ring-primary-300">Subscribe</button>
+						</div>
+					</div>
+					<div class="mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer">We
+						care about the protection of your data. <a href="#"
+							class="font-medium text-primary-600 hover:underline">Read our Privacy Policy</a>.</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-gray-900 py-6">
+		<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+			<div class="md:flex md:justify-between">
+				<div class="mb-6 md:mb-0 text-white">
+					<img src="assets/logo.png" style="height: 120px;">
+				</div>
+				<div class="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-4">
+					<div>
+						<h2 class="mb-6 text-lg font-semibold uppercase text-white">About</h2>
+						<ul class="text-gray-400 font-medium">
+							<li class="mb-4">
+								<a href="" class="hover:underline">About us</a>
+							</li>
+							<li class="mb-4">
+								<a href="" class="hover:underline">News</a>
+							</li>
+							<li>
+								<a href="" class="hover:underline">Volunteer</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h2 class="mb-6 text-lg font-semibold uppercase text-white">Services</h2>
+						<ul class="text-gray-400 font-medium">
+							<li class="mb-4">
+								<a href="" class="hover:underline">Linssssssssssk</a>
+							</li>
+							<li>
+								<a href="" class="hover:underline">Link</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h2 class="mb-6 text-lg font-semibold uppercase text-white">Legal</h2>
+						<ul class="text-gray-400 font-medium">
+							<li class="mb-4">
+								<a href="" class="hover:underline">Lindsa adsysk</a>
+							</li>
+							<li>
+								<a href="" class="hover:underline">Link</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+			<div class="sm:flex sm:items-center sm:justify-between">
+				<span class="text-sm sm:text-center text-gray-400">© 2023 Colwick Park Lifeguards.
+					All Rights Reserved.
+				</span>
+				<span class="text-sm sm:text-center text-gray-400">Registered Charity number:
+					1198775</span>
+
+				<div class="flex mt-4 sm:justify-center sm:mt-0">
+					<a href="#" class="text-gray-500 hover:text-white">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#" class="text-gray-500 hover:text-white ms-5">
+						<i class="fab fa-instagram"></i></a>
+					</a>
 
 
 
-                </div>
-            </div>
-        </div>
-    </footer>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 </body>
