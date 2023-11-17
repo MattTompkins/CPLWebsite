@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 
-header { 
+p,
+body {
+    font-family: 'Inter Tight', sans-serif;
+}
+
+header {
     font-family: 'Staatliches', sans-serif;
     letter-spacing: 1px;
 }
@@ -10,10 +16,28 @@ header {
     font-size: 1.15rem;
 }
 
-h1, h2, h3, h4, h5, h6, .title-font {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-font {
     font-family: 'Staatliches', sans-serif;
 }
 
 footer h2 {
     letter-spacing: 1px;
+}
+
+.hero-title h1 {
+    line-height: 1.35em;
+    color: #fff;
+}
+
+.hero-title h1 span {
+    background-color: #dc2626;
+    padding: 0 0.6rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
