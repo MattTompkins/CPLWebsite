@@ -16,12 +16,19 @@ header {
     font-size: 1.15rem;
 }
 
+.cta-button {
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.15rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+
 .title-font {
     font-family: 'Staatliches', sans-serif;
 }
