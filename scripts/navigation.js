@@ -6,13 +6,11 @@ window.addEventListener('scroll', function () {
 
 	if (window.pageYOffset > 0) {
 		header.classList.add('scrolled');
-		header.classList.remove('md:px-5'); // Remove px-5 class when scrolled
 		logo.style.display = 'none';
 		donateBar.style.display = 'none';
 		headerContainer.classList.remove('container', 'max-w-8xl');
 	} else {
 		header.classList.remove('scrolled');
-		header.classList.add('md:px-5'); // Add px-5 class when at the top
 		logo.style.display = 'flex';
 		donateBar.style.display = 'block';
 		headerContainer.classList.add('container', 'max-w-8xl');
