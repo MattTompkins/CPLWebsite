@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CPL Redesign Project</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/tailwind.config.js"></script>
+
+    <!-- Styles and fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,301,701,300,501,401,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+</head>
+
+<body class="bg-white">
+
+    <header class="bg-white sticky top-0">
+        <div class="container mx-auto flex shadow-b shadow-lg h-full" id="js-header-container">
+
+            <div class="bg-navy flex items-center">
+                <a href="/">
+                    <img src="/assets/logo.png" alt="Logo" class="p-3" style="height: 120px;">
+                </a>
+            </div>
+
+            <div class="flex flex-col flex-grow">
+                <div class="bg-red-700 border-gray-200">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto my-auto">
+                        <a href="#" class="p-3 text-white ml-2 text-lg hover:bg-navy"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="p-3 text-white ml-2 mr-3 text-lg hover:bg-navy"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.justgiving.com/campaign/cplfloodappeal"
+                            class="p-3 px-8 w-40 text-center bg-yellow-400 hover:bg-navy hover:text-white header__donate-button">DONATE</a>
+                    </div>
+                </div>
+
+                <nav class="hidden md:block">
+                    <div class="flex flex-wrap items-center justify-between mx-auto">
+                        <ul class="font-medium w-full flex">
+                            <li class="flex-1 border-r  border-gray-200">
+                                <a href="/about.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">About</a>
+                            </li>
+                            <li class="flex-1 border-r border-gray-200">
+                                <a href="/services.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Services</a>
+                            </li>
+                            <li class="flex-1 border-r  border-gray-200">
+                                <a href="/training.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Training</a>
+                            </li>
+                            <li class="flex-1 border-r  border-gray-200">
+                                <a href="/events.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Events</a>
+                            </li>
+                            <li class="flex-1 border-r  border-gray-200">
+                                <a href="/news.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">NEWS</a>
+                            </li>
+                            <li class="flex-1  border-gray-200">
+                                <a href="/contact.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="flex items-center justify-end md:hidden my-auto py-5 px-4">
+                    <button id="js-mobile-sidebar-toggle">
+                        <i class="fas fa-bars mr-2 text-xl align-middle"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <aside id="mobile-sidebar"
+            class="fixed top-0 left-0 z-40 w-80 h-screen transition-transform -translate-x-full sm:translate-x-0 md:hidden"
+            aria-label="Sidebar">
+            <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+
+                <ul class="space-y-2 font-medium">
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">About</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Services</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Training</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Events</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">News</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </aside>
+
+        <div id="mobile-sidebar-overlay"
+            class="fixed top-0 left-0 z-30 w-screen h-screen bg-black bg-opacity-50 hidden"></div>
+    </header>
+
+    <!-- Page header-->
+    <section class="mx-auto flex container items-center justify-center bg-white max-w-2/3"
+        style="background-image: url('https://www.thelifeguards.org.uk/img/photos/lake.jpg'); max-height: 750px;">
+        <div class="container mx-auto max-w-screen-xl ">
+            <div class="px-10 py-14 text-white md:w-2/3">
+                <div class="hero-title">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"><span>Contact us</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500sm:text-xl">We'd love to hear from you. Whether you require our services, or would like to volunteer, please fill in the form below.</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
+                    <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cplRed focus:border-cplRed block w-full p-2.5" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email address</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cplRed focus:border-cplRed block w-full p-2.5" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-cplRed focus:border-cplRed" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-cplRed focus:border-cplRed" placeholder="Leave a comment..."></textarea>
+                </div>
+                CAPTCHA
+                <button type="submit" class="inline-flex items-center bg-navy text-white focus:ring-4 focus:ring-primary-300 text-sm px-5 py-3 text-center hover:bg-cplRed cta-button">Send message</button>
+            </form>
+        </div>
+      </section>
+
+
+    <!-- Newsletter signup -->
+    <section class="bg-gray-100">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-md sm:text-center">
+                <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Join our mailing list
+                </h2>
+                <p class="mx-auto mb-6 max-w-2xl font-light text-gray-500 sm:text-xl ">Keep up to date with the latest
+                    news, upcoming events and courses, socials and more.</p>
+                <form action="#">
+                    <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                        <div class="relative w-full">
+                            <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900">Email
+                                address</label>
+                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                    </path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                            </div>
+                            <input
+                                class="block p-3 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-cplRed focus:border-cplRed"
+                                placeholder="Enter your email" type="email" id="email" required="">
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="py-3 px-5 w-full font-medium text-center text-white rounded-lg border cursor-pointer bg-navy border-navy sm:rounded-none sm:rounded-r-lg hover:bg-cplRed hover:border-cplRed focus:ring-4 focus:ring-cplRed-300">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer">We
+                        care about the protection of your data. <a href="#"
+                            class="font-medium text-cplRed-600 hover:underline">Read our Privacy Policy</a>.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-6">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0 text-white">
+                    <img src="assets/logo.png" style="height: 120px;">
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-4">
+                    <div>
+                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">Useful links</h2>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Volunteer</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Training</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">About</h2>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">About us</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Latest news</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Donate</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">Services</h2>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Event safety cover</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Risk assessments</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Our fleet</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">Info</h2>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Privacy Policy</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Terms and conditions</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm sm:text-center text-gray-400">© 2023 Colwick Park Lifeguards.
+                    All Rights Reserved.
+                </span>
+                <span class="text-sm sm:text-center text-gray-400">Registered Charity number:
+                    1198775</span>
+
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-white">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-white ms-5">
+                        <i class="fab fa-instagram"></i></a>
+                    </a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+</body>
+
+
+</html>
