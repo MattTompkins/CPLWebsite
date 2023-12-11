@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CPL Redesign Project</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/tailwind.config.js"></script>
+
+    <!-- Styles and fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,301,701,300,501,401,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+</head>
+
+<body class="bg-white">
+
+    <header class="bg-white sticky top-0">
+        <div class="container mx-auto flex shadow-b shadow-lg h-full" id="js-header-container">
+
+            <div class="bg-navy flex items-center">
+                <a href="/">
+                    <img src="/assets/logo.png" alt="Logo" class="p-3" style="height: 120px;">
+                </a>
+            </div>
+
+            <div class="flex flex-col flex-grow">
+                <div class="bg-red-700 border-gray-200">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto my-auto">
+                        <a href="#" class="p-3 text-white ml-2 text-lg hover:bg-navy"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="p-3 text-white ml-2 mr-3 text-lg hover:bg-navy"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.justgiving.com/campaign/cplfloodappeal"
+                            class="p-3 px-8 w-40 text-center bg-yellow-400 hover:bg-navy hover:text-white header__donate-button">DONATE</a>
+                    </div>
+                </div>
+
+                <nav class="hidden md:block">
+                    <div class="flex flex-wrap items-center justify-between mx-auto">
+                        <ul class="font-medium w-full flex">
+                            <li class="flex-1 border-r  border-gray-200">
+                                <a href="/about.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">About</a>
+                            </li>
+                            <li class="flex-1 border-r border-gray-200">
+                                <a href="/services.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Services</a>
+                            </li>
+                            <li class="flex-1 border-r  border-gray-200">
+                                <a href="/training.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Training</a>
+                            </li>
+                            <li class="flex-1 border-r  border-gray-200">
+                                <a href="/events.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Events</a>
+                            </li>
+                            <li class="flex-1 border-r  border-gray-200">
+                                <a href="/news.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">NEWS</a>
+                            </li>
+                            <li class="flex-1  border-gray-200">
+                                <a href="/contact.html"
+                                    class="block py-7 px-5 text-xl text-black text-center hover:bg-navy hover:text-white">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="flex items-center justify-end md:hidden my-auto py-5 px-4">
+                    <button id="js-mobile-sidebar-toggle">
+                        <i class="fas fa-bars mr-2 text-xl align-middle"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <aside id="mobile-sidebar"
+            class="fixed top-0 left-0 z-40 w-80 h-screen transition-transform -translate-x-full sm:translate-x-0 md:hidden"
+            aria-label="Sidebar">
+            <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+
+                <ul class="space-y-2 font-medium">
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">About</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Services</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Training</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Events</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">News</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                            <span class="flex-1 ms-3 whitespace-nowrap text-lg">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </aside>
+
+        <div id="mobile-sidebar-overlay"
+            class="fixed top-0 left-0 z-30 w-screen h-screen bg-black bg-opacity-50 hidden"></div>
+    </header>
+
+    <!-- Page header-->
+    <section class="mx-auto flex container items-center justify-center bg-white max-w-2/3"
+        style="background-image: url('https://www.thelifeguards.org.uk/img/photos/lake.jpg'); max-height: 750px;">
+        <div class="container mx-auto max-w-screen-xl ">
+            <div class="px-10 py-14 text-white md:w-2/3">
+                <div class="hero-title">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"><span>Our services</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="gap-16 items-center py-8f px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg">
+                <h2 class="mb-4 text-4xl font-extrabold text-gray-900">Water Safety & Rescue Services
+                </h2>
+                <p class="mb-4">Colwick Park Lifeguards bring over 30 years of expertise to ensure the safety of your
+                    open water events. From festivals and triathlons to film and TV productions, our dedicated
+                    lifeguards and safety boats are equipped to handle diverse water safety needs.</p>
+                <p>At the core of our services are qualified lifeguards, first aiders, and skilled safety boat helms.
+                    With a commitment to professionalism, we prioritize the well-being of everyone in, on, and near open
+                    water.</p>
+                <a href="/contact.html"
+                    class="inline-flex items-center bg-navy mt-6 text-white focus:ring-4 focus:ring-primary-300 text-sm px-5 py-3 text-center hover:bg-cplRed cta-button">Get
+                    in touch</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+                    alt="office content 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+                    alt="office content 2">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-white">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 text-center">
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                    <div
+                        class="flex mx-auto justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold">Lifeguards</h3>
+                    <p class="text-gray-500">Plan it, create it, launch it. Collaborate seamlessly with all the
+                        organization and hit your marketing goals every month with our marketing plan.</p>
+                </div>
+
+                <div>
+                    <div
+                        class="flex mx-auto justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold">Safety Boats</h3>
+                    <p class="text-gray-500">Plan it, create it, launch it. Collaborate seamlessly with all the
+                        organization and hit your marketing goals every month with our marketing plan.</p>
+                </div>
+
+                <div>
+                    <div
+                        class="flex mx-auto justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold">Specialist Equipment</h3>
+                    <p class="text-gray-500">Plan it, create it, launch it. Collaborate seamlessly with all the
+                        organization and hit your marketing goals every month with our marketing plan.</p>
+                </div>
+
+                <div>
+                    <div
+                        class="flex mx-auto justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold">Festivals</h3>
+                    <p class="text-gray-500">Plan it, create it, launch it. Collaborate seamlessly with all the
+                        organization and hit your marketing goals every month with our marketing plan.</p>
+                </div>
+
+                <div>
+                    <div
+                        class="flex mx-auto justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold">Sports Events</h3>
+                    <p class="text-gray-500">Plan it, create it, launch it. Collaborate seamlessly with all the
+                        organization and hit your marketing goals every month with our marketing plan.</p>
+                </div>
+
+                <div>
+                    <div
+                        class="flex mx-auto justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold">Film & TV</h3>
+                    <p class="text-gray-500">Plan it, create it, launch it. Collaborate seamlessly with all the
+                        organization and hit your marketing goals every month with our marketing plan.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-navy">
+        <div class="gap-16 items-center py-8f px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+                    alt="office content 2">
+
+                <img class="w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+                    alt="office content 1">
+            </div>
+            <div class="text-gray-100 sm:text-lg">
+                <h2 class="mb-6 text-4xl font-extrabold text-white highlight-text"><span>Event water safety specialsits
+                    </span></h2>
+                <h3 class="text-2xl mb-2">Our fleet</h3>
+                <p class="mb-4">Our impressive fleet includes rigid inflatables (RIBs) of various sizes, hard-shelled
+                    boats, fully inflatable boats, Piranha Dorys, paddle craft, and an off-road vehicle. Each vessel is
+                    strategically chosen to adapt to different water conditions, providing flexibility for various
+                    events.</p>
+                <h3 class="text-2xl mb-2">Specialist Equipment</h3>
+                <p>Equipped with specialist rescue gear, including first aid kits, radios, and dry suits, our fleet
+                    ensures we are prepared for any situation. Safety is our top priority, and our gear reflects our
+                    commitment to excellence.</p>
+                <a href="/contact.html"
+                    class="inline-flex items-center bg-cplRed mt-6 text-white focus:ring-4 focus:ring-primary-300 text-sm px-5 py-3 text-center hover:bg-black cta-button">Get
+                    in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="max-w-screen-md mb-8 lg:mb-9">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Our fleet</h2>
+                <p class="text-gray-700 sm:text-xl">Our fleet consists of a range of different boats, specialist
+                    equipeent and vehicles, suited to a wide range of applications.</p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                    <div class="flex justify-center items-center mb-4 bg-primary-100">
+                        <img src="https://www.thelifeguards.org.uk/img/photos/truck.jpg" class="rounded-lg">
+                    </div>
+                    <h3 class="mb-2 text-2xl font-bold">Rigid Inflatable Boats (RIBs)</h3>
+                    <p class="text-gray-600">Possibly our most versatile boats, RIBs can reliably tackle a wide range of
+                        conditions, while providing a very stable platform to perform rescues from, and capacity for
+                        many casualties. </p>
+
+                </div>
+                <div>
+                    <div class="flex justify-center items-center mb-4 bg-primary-100">
+                        <img src="https://www.thelifeguards.org.uk/img/photos/truck.jpg" class="rounded-lg">
+                    </div>
+                    <h3 class="mb-2 text-2xl font-bold">Small Inflatable Boats</h3>
+                    <p class="text-gray-600">Our smaller inflatable boats are especially suited to smaller lakes and
+                        festival sites, they are easy to transport across sites and can be launched without a slipway.
+                        They can also operate in shallower waters, and can be rowed if deployed to an area where an
+                        outboard engine would not be suitable. </p>
+
+                </div>
+                <div>
+                    <div class="flex justify-center items-center mb-4 bg-primary-100">
+                        <img src="https://www.thelifeguards.org.uk/img/photos/truck.jpg" class="rounded-lg">
+                    </div>
+                    <h3 class="mb-2 text-2xl font-bold">Piranha Dory's</h3>
+                    <p class="text-gray-600">These are solid hulled boats with a large open deck. They provide ample
+                        room for treating a casualty on scene, and even have enough space to lie a spinal board flat.
+                    </p>
+
+                </div>
+                <div>
+                    <div class="flex justify-center items-center mb-4 bg-primary-100">
+                        <img src="https://www.thelifeguards.org.uk/img/photos/truck.jpg" class="rounded-lg">
+                    </div>
+                    <h3 class="mb-2 text-2xl font-bold">Paddle Craft</h3>
+                    <p class="text-gray-600">We have a selection of surk ski's, canoes and kayaks which we rely on
+                        heavily for open water swimming and similar activities. </p>
+
+                </div>
+                <div>
+                    <div class="flex justify-center items-center mb-4 rounded-full bg-primary-100">
+                        <img src="https://www.thelifeguards.org.uk/img/photos/equipment.jpg" class="rounded-lg">
+                    </div>
+                    <h3 class="mb-2 text-2xl font-bold">Off Road Vehicle</h3>
+                    <p class="text-gray-600">Our 4x4 is not only used to tow and launch our rescue
+                        boats, but also as a base at events where our lifeguards operate from the land. It can provided a point of contact for members of the public and can be set
+                        up as a lifeguarding position and first aid point. </p>
+                </div>
+                <div>
+                    <div class="flex justify-center items-center mb-4 rounded-full bg-primary-100">
+                        <img src="https://www.thelifeguards.org.uk/img/photos/RIB.jpg" class="rounded-lg">
+                    </div>
+                    <h3 class="mb-2 text-2xl font-bold">Specialist Rescue Equipment</h3>
+                    <p class="text-gray-600">All of our fleet are kitted out with specialist rescue equipment, including
+                        rescue aids, first aid kits, radios, dry suits for staff and more. </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-6">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0 text-white">
+                    <img src="assets/logo.png" style="height: 120px;">
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-4">
+                    <div>
+                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">Useful links</h2>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Volunteer</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Training</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">About</h2>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">About us</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Latest news</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Donate</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">Services</h2>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Event safety cover</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Risk assessments</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Our fleet</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-lg font-semibold uppercase text-white">Info</h2>
+                        <ul class="text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Privacy Policy</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Terms and conditions</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="" class="hover:underline hover:text-gray-200">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm sm:text-center text-gray-400">© 2023 Colwick Park Lifeguards.
+                    All Rights Reserved.
+                </span>
+                <span class="text-sm sm:text-center text-gray-400">Registered Charity number:
+                    1198775</span>
+
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-white">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-white ms-5">
+                        <i class="fab fa-instagram"></i></a>
+                    </a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+</body>
+
+
+</html>
